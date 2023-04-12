@@ -8,6 +8,9 @@
 # 3 2 4 -> yes
 # 3 2 1 -> no
 
+from ssl import ALERT_DESCRIPTION_RECORD_OVERFLOW
+
+
 print("Введеите размер n × m")
 print("Введеите размер размером n")
 n = int(input())
@@ -19,3 +22,4 @@ if k < (m * n) and ((k % m == 0) or (k % n == 0)):
     print("YES")
 else:
     print("NO")
+

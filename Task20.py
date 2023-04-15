@@ -42,17 +42,17 @@ list_Russian  = {   1:'АВЕИНОРСТ',
       	            10:'ФЩЪ'
                 }
 
-N = int(input('Английское слово - 0, '
-                  'Русское слово - 1: '))
+N = str(input('Английское слово - eng, '
+                  'Русское слово - rus: '))
 word = input('Введите слово: ').upper()
 summa = 0
-if N == 0:
+if N == "eng":
     for i in word:
         for key, value in list_English.items():
             if i in value:
                 summa += key
     print(summa)
-elif N == 1:
+elif N == "rus":
     for i in word:
         for key, value in list_Russian.items():
             if i in value:

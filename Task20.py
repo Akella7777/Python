@@ -42,8 +42,7 @@ list_Russian  = {   1:'АВЕИНОРСТ',
       	            10:'ФЩЪ'
                 }
 
-N = str(input('Английское слово - eng, '
-                  'Русское слово - rus: '))
+N = str(input('Введите какое слово вводим.''\n''Английское слово - eng,''\n''Русское слово - rus:''\n'))
 word = input('Введите слово: ').upper()
 summa = 0
 if N == "eng":
@@ -52,12 +51,14 @@ if N == "eng":
             if i in value:
                 summa += key
     print(summa)
+    print(f'Вы получаете очков -eng {summa}')
 elif N == "rus":
     for i in word:
         for key, value in list_Russian.items():
             if i in value:
                 summa += key
     print(summa)
+    print(f'Вы получаете очков - {summa}')
 else:
-    print('Язык игры не определн. Введите 0 для английского слова или 1 для русского слова')
+    print('Язык игры не определн. Введите eng для английского слова или rus для русского слова')
 

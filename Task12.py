@@ -10,3 +10,12 @@ y = int(input("Введите произведение чисел: "))
         for num_2 in range(y):
             if x == num_1 + num_2 and y == num_1 * num_2:
                 print(num_1, num_2)
+
+
+
+#for i in range(1001):
+#    if i * (s1 - i) == p1:
+#        print("Загаданные числа ->", i, s1-i)
+#        break
+#else:
+#    print("при данных исходных решений нет")

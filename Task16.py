@@ -16,10 +16,11 @@ max_elem = int(input("Введите максимальное число в ма
 list = []
 number = int(input(f"Введите искомое число: "))
 count = 0
-
+for i in range(quantity_elem):
+    list.append(random.randint(0, max_elem))
+    
 if number <= max_elem:
     for i in range(quantity_elem):
-        list.append(random.randint(0, max_elem))
         if int(list[i]) == number:
             count += 1
     print(list)

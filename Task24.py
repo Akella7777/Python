@@ -14,7 +14,7 @@ class colors:
     END = '\033[0m'
 
 bushes = int(input("Введите количество кустов: "))
-berries = [int(i) for i in input("Введите через пробел количество ягод на каждом кусте: ").split()]
+berries = [int(i) for i in input(f"введи {bushes} чисел через пробел: ").split()]
 berries_max = 0
 
 if len(berries) != bushes:
